@@ -1,2 +1,17 @@
-package test.test1.app1;public class AppFirstController {
+package test.test1.app1;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class AppFirstController {
+
+
+    @GetMapping("app1")
+    @ResponseBody
+    public String app1() {
+        return "it's app first !!!!!!!!!!!!!!!!!!!!!!!";
+    }
+
 }
