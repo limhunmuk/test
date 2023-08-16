@@ -14,4 +14,10 @@ public class AppFirstController {
         return "it's app first !!!!!!!!!!!!!!!!!!!!!!!";
     }
 
+    @GetMapping("app1/1")
+    @ResponseBody
+    public String app11() {
+        return "it's app first-1 !!!!!!!!!!!!!!!!!!!!!!!";
+    }
+
 }
